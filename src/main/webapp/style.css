@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f5f5;
+
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 20px;
+}
+
+
+.payment-card {
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+    color: #333;
+}
+
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+.order-info {
+    margin-bottom: 25px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+.info-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    text-align: left;
+}
+
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+
+.info-row span {
+    color: #666;
+}
+
+
+.info-row strong {
+    color: #222;
+}
+
+
+.momo-button {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #a50064;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s;
+}
+
+
+.momo-button:hover {
+    opacity: 0.9;
+}
+
+
+.note {
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    color: #999;
+}
+
+
+/* Payment result */
+
+.result-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.success-icon {
+    background: #e8f5e9;
+
+    color: #2e7d32;
+}
+
+
+.failed-icon {
+    background: #ffebee;
+
+    color: #c62828;
+}
+
+
+.success-title {
+    color: #2e7d32;
+}
+
+
+.failed-title {
+    color: #c62828;
+}
+
+
+.result-message {
+    margin-bottom: 25px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+
+.back-button {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    background: #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: opacity 0.2s;
+}
+
+
+.back-button:hover {
+    opacity: 0.85;
+}
+
+
+@media (max-width: 600px) {
+
+    .payment-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .info-row {
+        font-size: 14px;
+    }
+}
