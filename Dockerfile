@@ -13,11 +13,12 @@ RUN mvn clean package -DskipTests
 
 FROM tomcat:10.1-jdk17-temurin
 
-RUN rm -rf /usr/local/tomcat/webapps/*
+RUN rm -rf /usr/local/tomcat/webapps/* \
+    && sed -i 's/port="8080"/port="10000"/' /usr/local/tomcat/conf/server.xml
 
 COPY --from=build /app/target/ROOT.war \
     /usr/local/tomcat/webapps/ROOT.war
 
-EXPOSE 8080
+EXPOSE 10000
 
 CMD ["catalina.sh", "run"]

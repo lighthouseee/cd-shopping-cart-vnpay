@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>MoMo Payment Demo</title>
+    <title>VNPAY Payment Demo</title>
 
     <link rel="stylesheet"
           href="${pageContext.request.contextPath}/style.css">
@@ -21,10 +21,18 @@
 
     <div class="payment-card">
 
-        <h1>MoMo Payment Demo</h1>
+        <div class="brand-badge">
+            VNPAY SANDBOX
+        </div>
+
+
+        <h1>
+            Thanh toán đơn hàng
+        </h1>
+
 
         <p class="subtitle">
-            Thanh toán đơn hàng
+            CD Store Payment Demo
         </p>
 
 
@@ -35,6 +43,7 @@
                 <strong>CD Store Demo</strong>
             </div>
 
+
             <div class="info-row">
                 <span>Số tiền</span>
                 <strong>100.000 VND</strong>
@@ -43,19 +52,21 @@
         </div>
 
 
-        <form action="${pageContext.request.contextPath}/momo/create"
+        <form action="${pageContext.request.contextPath}/vnpay/create"
               method="post">
 
             <button type="submit"
-                    class="momo-button">
-                Thanh toán bằng MoMo
+                    class="vnpay-button">
+
+                Thanh toán bằng VNPAY
+
             </button>
 
         </form>
 
 
         <p class="note">
-            Đây là môi trường MoMo Sandbox.
+            Đây là môi trường VNPAY Sandbox dùng để kiểm thử.
         </p>
 
     </div>
